@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Logo -->
+  <link rel="icon" href="./assets/logo.png" type="image/png">
+  <title>Odontologia - Vilma Queiroz</title>
+</head>
+
+<body>
+  <header>
+    <!-- Menu -->
+    <div class="menufloat">
+      <ul class="listamenufloat">
+        <li class="itemlistafloat"> <a class="link-sobre" href="#h1sobre">SOBRE</a></li>
+        <li class="itemlistafloat"> <a class="link-contato" href="#h1contato">CONTATO</a></li>
+        <li class="itemlistafloat"> <a class="link-localizacao" href="#barra-footer">LOCALIZAÇÃO</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!--Imagens uma ao lado da outra -->
+    <div class="row">
+      <!--Separação das divs-->
+      <div class="column">
+        <img src="./assets/pic-1.jpg" width="100%">
+      </div>
+
+      <div class="column">
+        <img src="./assets/pic-2.jpg" width="100%">
+      </div>
+
+      <div class="column">
+        <img src="./assets/pic-3.jpg" width="100%">
+      </div>
+    </div>
+
+    <!--Logo no meio-->
+    <div>
+      <img class="dente" src="./assets/dente.jpg" alt="">
+    </div>
+
+    <!--H1 Sobre-->
+    <h1 id="h1sobre">SOBRE NÓS</h1>
+
+    <!--DIV que contém todos os h2 do Sobre-->
+    <div class="div-sobre">
+      <h2 class="h2sobre">A Clínica Odontológica Nacle oferece uma estrutura com ambiente sofisticado e aconchegante,
+        pensada nos pequenos detalhes para proporcionar conforto e segurança aos nossos pacientes. Contamos ainda com
+        equipamentos de última geração e investimentos constante em novidades.</h2>
+      <h2 class="h2sobre">A Clínica Odontológica Nacle oferece uma estrutura com ambiente sofisticado e aconchegante,
+        pensada nos pequenos detalhes para proporcionar conforto e segurança aos nossos pacientes. Contamos ainda com
+        equipamentos de última geração e investimentos constante em novidades.</h2>
+      <h2 class="h2sobre">A Clínica Odontológica Nacle oferece uma estrutura com ambiente sofisticado e aconchegante,
+        pensada nos pequenos detalhes para proporcionar conforto e segurança aos nossos pacientes. Contamos ainda com
+        equipamentos de última geração e investimentos constante em novidades.</h2>
+    </div>
+
+    <!-- H1 Contato-->
+    <h1 id="h1contato">CONTATO</h1>
+
+    <!--Conteúdo Contato-->
+    <div class="imgfundo-contato">
+
+
+      <!--Formulário-->
+      <div class="formulario">
+        <h2 style="font-size: 15px; color: #000000; margin-top: 15px; margin-bottom: 15px; text-align: center;">ENTRE EM CONTATO CONOSCO</h2>
+
+        <form action="" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+
+          <input id="name" name="FNAME" type="text" placeholder="Nome*"> <!-- Nome -->
+          <input id="email" name="EMAIL" type="text" placeholder="Email*"> <!-- Email -->
+          <input id="tel" name="TELEFONE" type="tel" placeholder="Telefone*">
+          <!--Telefone-->
+
+          <input id="mensagem" name="MENSAGEM" type="text" placeholder="Deixe sua Mensagem*">
+          <!--Mensagem-->
+
+          <input type="submit" value="Enviar"> <!-- Botão Submit -->
+
+        </form>
+      </div>
+
+      <!--quadrado verde escuro-->
+      <div class="endereco">
+
+        <p class="nomeclinica-contato"> <strong>CLINICA NACLE</strong> </p>
+        <p class="fraseclinica-contato"> SAÚDE E ESTÉTICA ORAL</p>
+
+        <!--DIV para o icone de TELEFONE-->
+        <div class="telefone-contato">
+
+          <i class="material-icons" style="color:#ffffff;">call</i>
+          <p class="num-tel-1">+55 11 94964-0622</p>
+          <p class="num-tel-2">+55 11 92004-4134</p>
+        </div>
+
+        <br>
+        <!--DIV para o icone de EMAIL-->
+        <div class="email-contato">
+          <i class="material-icons" style="color:#ffffff;">email</i>
+          <p class="email-1">contato@clinicanacle.com</p>
+        </div>
+
+        <br>
+        <!--DIV para o icone de ENDERECO-->
+        <div class="endereco-contato">
+          <i class="material-icons" style="color:#ffffff;">pin_drop</i>
+          <p class="endereco-1">Rua Apiacas, 461 - Perdizes São Paulo, SP - CEP 05017-020</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div id="barra-footer">
+      <div class="nome-footer">
+        <strong>CLINICA NACLE</strong>
+      </div>
+      <div class="frase-footer">
+        SAÚDE E ESTÉTICA ORAL
+      </div>
+
+      <br>
+      <div class="telefone-contato-footer">
+
+        <i class="material-icons" style="color:#ffffff;">call</i>
+        <p class="num-tel-1-footer">+55 11 94964-0622</p>
+        <p class="num-tel-2-footer">+55 11 92004-4134</p>
+      </div>
+
+      <br>
+      <div class="endereco-contato-footer">
+        <i class="material-icons" style="color:#ffffff;">pin_drop</i>
+        <p class="endereco-1-footer">Rua Apiacas, 461 - Perdizes São Paulo, SP - CEP 05017-020</p>
+      </div>
+
+      <div class="link-maps"> <a target="_blank" href="https://www.google.com/maps/place/R.+Apiac%C3%A1s,+461+-+Pompeia,+S%C3%A3o+Paulo+-+SP,+05017-020/@-23.5361016,-46.6798245,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce57f0f6598cdf:0xcacec7e3a01e9739!8m2!3d-23.5361016!4d-46.6776358">VER NO GOOGLE MAPS</a> </div>
+    </div>
+  </footer>
+
+  <div id="whatsapp">
+    <a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=5511949640622">
+      <img src="./assets/logowhatsapp.png" alt="Whatsapp CLINICA NACLE" width="55" height="55">
+    </a>
+  </div>
+</body>
+
+</html>

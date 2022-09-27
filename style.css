@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color:#ffffff;
+    background-color:#549398;
+} /*muda a cor do texto selecionado - aplicado ao html inteiro*/
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f7f8;
+}
+
+.listamenufloat{
+    display: inline-block;
+    list-style: none;
+    padding: 30px;
+}
+.itemlistafloat{
+    padding: 10px;
+    background-color: #549398;
+    color: #ffffff;
+    float: left;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+a.link-sobre{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+}
+a.link-contato{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+}
+a.link-localizacao{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+}
+
+
+.dente{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 256px;
+    height: auto;
+    border-radius: 50%;
+}
+#h1sobre{
+    color: #0f5a88;
+    text-align: center;
+    padding: 30px;
+}
+.div-sobre::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.h2sobre{
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+    font-size: 15px;
+}
+
+#h1contato{
+    color: #0f5a88;
+    text-align: center;
+    padding: 30px;
+}
+
+.imgfundo-contato{
+    height: 500px;
+    background-image: url(assets/fundocontato.jpg); /*Imagem no fundo*/
+    background-size: cover;
+}
+
+
+
+/*FORMULARIO*/
+
+.formulario{
+    max-width: 400px;
+    background-color: #FFFFFFBB;
+    float: left; /*Deixa o formulário flutuando à esquerda*/
+    margin-top: 100px;
+    margin-left: 200px;
+    display: inline-block;
+}
+input{ /*aplica para os input*/
+    
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 12px 12px 0;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+input[id="mensagem"]{ /*Especifica o input submit*/
+    height: 100px;
+    
+}
+
+input[type="submit"]{ /*Especifica o input submit*/
+    color: #FFFFFF;
+    background-color: #549398;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #549398BB;
+    
+}
+
+/*Contato e Endereço*/
+
+.endereco{ /*caixa verde escura*/
+    background-color: #081f2d;
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.nomeclinica-contato{
+    color: #549398;
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.fraseclinica-contato{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+
+.telefone-contato{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.num-tel-1{
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+
+    
+    position: absolute;
+    transform: translate(10%, 15%);;
+
+}
+
+.num-tel-1:hover{
+    color: #76bd22;
+    text-decoration: underline;
+}
+.num-tel-2{
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+
+    position: absolute;
+    transform: translate(10%, 100%);;
+
+}
+
+.num-tel-2:hover{
+    color: #76bd22;
+    text-decoration: underline;
+}
+
+.email-contato{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.email-1{
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+
+    position: absolute;
+    transform: translate(7%, 15%);;
+}
+.email-1:hover{
+    color: #76bd22;
+    text-decoration: underline;
+}
+
+.endereco-contato{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-block;
+}
+.endereco-1{
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    max-width: 300px;
+
+    position: absolute;
+    transform: translate(5%, 0%);
+}
+
+#barra-footer{
+    background-color: #081f2d;
+    height: 250px;
+}
+.nome-footer{
+    color: #549398;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-top: 30px;
+    display: inline-block;
+}
+.frase-footer{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+.telefone-contato-footer{
+    padding-top:20px;
+    padding-left: 30px;
+}
+
+.num-tel-1-footer{
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+
+    
+    position: absolute;
+    transform: translate(10%, 15%);;
+
+}
+
+.num-tel-1-footer:hover{
+    text-decoration: underline;
+}
+.num-tel-2-footer{
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+
+    position: absolute;
+    transform: translate(10%, 100%);;
+
+}
+
+.num-tel-2-footer:hover{
+    text-decoration: underline;
+}
+
+.endereco-contato-footer{
+    padding-top:20px;
+    padding-left: 30px;
+    display: inline-block;
+}
+.endereco-1-footer{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    max-width: 400px;
+
+    position: absolute;
+    transform: translate(5%, 0%);
+}
+
+.link-maps{
+    padding-top: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #76bd22;
+    font-weight: bold;
+}
+
+.link-maps:hover{
+    text-decoration: underline;
+}
+
+#whatsapp{
+    position: fixed;
+    bottom: 1%;
+    right: 0.5%;
+}
+
+    @media screen and (max-width: 767px){
+        .menufloat{
+            margin-top: 20px;
+            float: none;
+            text-align: center;
+
+        }
+        .itemlistafloat{
+            padding: 10px;
+            margin: 2px;
+            background-color: #549398;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
+    }
